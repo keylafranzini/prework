@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Receta de salsa</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+
+        h1{
+            font-family:fantasy;
+            color:darkred;
+            margin-bottom: 2px;
+        }
+
+        ul{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+       [data-vegetable] {
+           color: green;
+       }
+
+       [data-vegetable="liquid"] {
+           color: blue;
+       }
+
+       [data-meat]{
+           color:coral;
+       }
+
+       .azucar{
+           color:darkgoldenrod;
+       }
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            <h1>Salsa Casera</h1>
+            <img src="css/salsa.png" alt="salsa casera" width="300">
+
+            <ul>
+                <li data-quantity="4" data-vegetable>Tomates</li>
+                <li data-quantity="1" data-vegetable>Cebolla</li>
+                <li data-quantity="3" data-vegetable>Ajo</li>
+                <li data-quantity="1" data-vegetable>Cilantro</li>
+                <li data-quantity="10ml" data-vegetable="liquid">Limón</li>
+                <li data-quantity="20ml" data-vegetable="liquid">Aceite de Oliva</li>
+                <li data-quantity="300g" data-meat>Pollo</li>
+                <li class="azucar" data-quantity="10g">Azúcar</li>
+            </ul>
+
+        </div>
+        
+    </body>
+</html>
