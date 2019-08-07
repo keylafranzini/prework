@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica Final JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-form">
+        <section class="form-left">
+           
+                <h1 class="form-text">Creador de formulario</h1>
+
+                <div class="form-left__tag">
+                    <label class="form-label" for="etiquetacontrol">¿Agrega un Texto?</label>
+                    <input class="form-input" id="text">
+                    <input type="button" value="Anadir campo texto" onclick="campoText()">
+                </div>
+                <div class="form-left__tag">
+                    <label for="controltag">¿Agrega un Número?</label>
+                    <input id="number" type="text">
+                    <input type="button" value="Anadir campo de número" onclick="campoNumber()">
+                </div>
+                <div class="form-left__tag">
+                    <label for="controltag">¿Agrega un E-mail?</label>
+                    <input id="mail" type="text">
+                    <input type="button" value="Anadir campo de e-mail" onclick="campoMail()">
+                </div> 
+
+                <div>
+                
+                    <div class="form-left__label">
+                        <label class="label1" for="list">¿Qué datos quieres introducir?</label>
+                        <textarea class="text" id="list" cols="30" rows="10"></textarea>
+                        <label class="label" for="">¿Quieres que se puedan selecionar varios datos?</label>
+                        Sí<input class="si" class="radiobutton" type="radio" name="list" value="si" > 
+                        No<input class="no" class="radiobutton" type="radio" name="list" value="no">
+                        <input type="button" value="anadir lista de seleccion" onclick="campoList()">
+                    </div>
+
+                    <div class="form-left__label">
+                        <label for="btn">Introduzca texto</label>
+                        <input id="boton" type="text">
+                        <input type="button" value="Botón" onclick="button()">
+                    </div>
+                </div>
+           
+        </section>
+
+        <section id="form-right" class="form-right">
+            <h1 class="form-text">Formulario</h1>
+        </section>
+    </div>
+</body>
+</html>
